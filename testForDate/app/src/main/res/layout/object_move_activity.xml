@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_move_layout">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/moveLayoutRoot"
+            android:layout_width="900dp"
+            android:layout_height="1200dp"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/moveLayoutBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/background_1"
+                app:layout_constraintBottom_toBottomOf="@id/moveLayoutRoot"
+                app:layout_constraintLeft_toLeftOf="@id/moveLayoutRoot" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/store_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="STORE"
+        app:layout_constraintStart_toStartOf="@+id/bottom_move_layout"
+        app:layout_constraintTop_toTopOf="@+id/bottom_move_layout"
+        android:layout_marginLeft="16dp" />
+    <ImageButton
+        android:id="@+id/map_object_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="@id/bottom_move_layout"
+        app:layout_constraintTop_toTopOf="@id/bottom_move_layout"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+        tools:layout_editor_absoluteX="350dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <ImageView
+        android:id="@+id/cancel_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toLeftOf="@id/map_object_list"
+        app:layout_constraintTop_toTopOf="@id/bottom_move_layout"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/close"
+        android:layout_marginEnd="16dp"
+        />
+
+    <!--地圖物件列表-->
+    <LinearLayout
+        android:id="@+id/map_object_icon_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="@id/bottom_move_layout"
+        app:layout_constraintTop_toBottomOf="@id/store_button"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/tree_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/tree_1" />
+
+            <TextView
+                android:id="@+id/tree_icon_count"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/initialCountOfObject" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/yellow_cat_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/tree_2" />
+
+            <TextView
+                android:id="@+id/yellow_cat_icon_count"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/initialCountOfObject" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/little_tree_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/little_tree" />
+
+            <TextView
+                android:id="@+id/little_tree_icon_count"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/initialCountOfObject" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">app</string>
+    <string name="btn">CREATE</string>
+    <string name="number">0</string>
+    <string name="diary">this is content of diary</string>
+    <string name="hint">nothing happen</string>
+    <string name="back">BACK</string>
+    <string name="choose">Choose a weather</string>
+    <string name="initialCountOfObject">0</string>
+    <string name="dash">-</string>
+    <string name="backBTN">BACK</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

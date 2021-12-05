@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapinfo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="200dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingBottom="30dp"
+    android:paddingTop="30dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:minHeight="45dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:minHeight="45dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/spot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:minHeight="45dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="top|left"
+        android:background="@drawable/textview_border"
+        android:minHeight="145dp"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

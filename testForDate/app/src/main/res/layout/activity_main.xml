@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="900dp"
+        android:layout_height="1200dp"
+        tools:context=".MainActivity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_1"
+            app:layout_constraintBottom_toBottomOf="@id/root"
+            app:layout_constraintLeft_toLeftOf="@id/root" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--<rain.RainView
+        android:id="@+id/rainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        />-->
+
+    <ImageButton
+        android:id="@+id/list"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:srcCompat="@drawable/ic_action_name" />
+
+    <LinearLayout
+        android:id="@+id/layout_select"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="25dp"
+
+        >
+
+    <ImageButton
+        android:id="@+id/newDiary_button"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/calendar_add" />
+
+    <ImageButton
+        android:id="@+id/calendar_button"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/newDiary_button"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageButton
+        android:id="@+id/store_button"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calendar_button"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/store" />
+
+    <ImageButton
+        android:id="@+id/moveMapObject"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/store_button"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/move"
+
+        />
+
+    </LinearLayout>
+
+    <!--查看歷史紀錄-->
+    <ImageButton
+        android:id="@+id/checkHistory"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_baseline_book_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <ImageButton
+        android:id="@+id/mapcheck"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkHistory"
+        app:srcCompat="@drawable/mapicon" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="98dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/m1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/_0" />
+
+        <ImageButton
+            android:id="@+id/m2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="-6dp"
+            android:layout_marginLeft="-6dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/_0" />
+
+        <ImageButton
+            android:id="@+id/slash"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="-6dp"
+            android:layout_marginLeft="-6dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/slash" />
+
+        <ImageButton
+            android:id="@+id/d1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="-6dp"
+            android:layout_marginLeft="-6dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/_0" />
+
+        <ImageButton
+            android:id="@+id/d2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="-6dp"
+            android:layout_marginLeft="-6dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/_0" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/weathericon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/background_transparent"
+        android:clickable="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sunny" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

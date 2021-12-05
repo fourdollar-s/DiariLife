@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/diagramRoot">
+
+    <!--返回查看歷史頁面的按鈕-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DiagramBackBtn"
+        android:text="@string/backBTN"
+        />
+
+    <!--選擇日期-->
+    <Button
+        android:id="@+id/pickDateBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PICK DATE"
+        android:layout_toRightOf="@+id/DiagramBackBtn"
+        android:layout_marginLeft="5dp" />
+
+    <!--日期提示文字-->
+    <TextView
+        android:id="@+id/yearMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here will show the date user choose"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/DiagramBackBtn"/>
+
+    <!--折線-->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/yearMonth"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <!--選擇要顯示哪一條折線的核取方塊-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/checkBoxRoot"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_below="@id/lineChart"
+        android:layout_marginTop="80dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxHappy"
+            android:text="Happy"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxNotbad"
+            android:text="Not Bad"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxAngry"
+            android:text="Angry"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxSad"
+            android:text="Sad"
+            />
+    </LinearLayout>
+
+    <!--縮放-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/scaleRoot"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_left"
+            android:id="@+id/increaseScale"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:id="@+id/decreaseScale"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+人物介面，同building用法(因為要將多個圖片綁為單一物件)
+人物需包含以下部分：
+1. 身體(底層)
+2. 頭髮(頂層)()
+3. 衣服(頂層)
+4. 褲子(頂層)
+需注意若未來要製作動畫，可能需要能夠抽換身體圖片
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/person_block_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/person_body"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/body"
+        android:layout_marginTop="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/person_face"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/face_1"
+        android:layout_marginTop="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/person_hair_1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/hair_1"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:id="@+id/person_accessories"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/accessories_1"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/person_pant"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pants_1"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/person_cloth"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cloth_1"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

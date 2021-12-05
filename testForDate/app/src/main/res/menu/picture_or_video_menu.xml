@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/picture"
+        android:icon="@drawable/move"
+        android:title="選擇照片"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/video"
+        android:icon="@drawable/info"
+        android:title="選擇影片"
+        app:showAsAction="always"/>
+</menu>

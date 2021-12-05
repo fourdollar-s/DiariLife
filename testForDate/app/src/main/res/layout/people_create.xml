@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/storeClothButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="store"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="209dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/face_1" />
+
+    <ImageView
+        android:id="@+id/body"
+        android:layout_width="209dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/body" />
+
+    <ImageView
+        android:id="@+id/hair_1"
+        android:layout_width="209dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/hair_2" />
+
+
+    <ImageView
+        android:id="@+id/accessories"
+        android:layout_width="209dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/accessories_1" />
+
+
+
+
+    <ImageView
+        android:id="@+id/pant_1"
+        android:layout_width="209dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/pants_1" />
+
+    <ImageView
+        android:id="@+id/cloth_1"
+        android:layout_width="209dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cloth_1" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="496dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="446dp" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:padding="3dp"
+            android:layout_marginLeft="44dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/select1"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@drawable/hair_select_1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/select2"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@drawable/cloth_select_1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/select3"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@drawable/face_select_1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/select4"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pants_select"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/select5"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@drawable/accessories_select_2"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_change_layout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.example.testfordate.Fragment_clothes"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.example.testfordate.Fragment_pants"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment3"
+            android:name="com.example.testfordate.Fragment_face"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/div_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+
+             />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/div_tab_bar"
+             />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
